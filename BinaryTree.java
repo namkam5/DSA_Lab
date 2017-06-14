@@ -148,6 +148,6 @@ class Node {
 
 	public String toString(){
 
-		return name + " has a key " + key;
+		return name + " has the key " + key;
 	}
 }
