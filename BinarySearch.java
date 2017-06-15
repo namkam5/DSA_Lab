@@ -10,7 +10,7 @@ public class BinarySearch{
       // Binary Search is only for sorted arrays.
       
       int y = binarySearch(arr,4);  // say we have to search for 4
-      System.out.println(y);  // this will output 2
+      System.out.println(y);  // this will output 2 which is the index of 4 in the given array
       
   }
   
