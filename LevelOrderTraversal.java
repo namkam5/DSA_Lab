@@ -1,3 +1,6 @@
+// This is a level order traversal without a queue
+// Note that this is  not the most efficient way to do this.
+
 import java.util.*;
 import java.io.*;
 
