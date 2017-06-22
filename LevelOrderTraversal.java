@@ -1,5 +1,7 @@
-// This is a level order traversal without a queue
-// Note that this is  not the most efficient way to do this.
+/* This is a level order traversal without a queue
+   Note that this is  not the most efficient way to do this. 
+   Look at Queue implementation for a more efficient way using linked lists.
+*/
 
 import java.util.*;
 import java.io.*;
