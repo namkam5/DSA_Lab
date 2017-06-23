@@ -1,13 +1,10 @@
-/*
-    Pre Order traversal implementation
-*/
-
 import java.util.*;
 import java.io.*;
 
-public class PreOrderTraversal{
+public class TreeInorderTraversal{
   
   public static void main(String args[]){
+    
     
     Node root = new Node(1);
     root.left = new Node(2);
@@ -15,21 +12,21 @@ public class PreOrderTraversal{
     root.right.left = new Node(4);
     root.right.right = new Node(5);
     
-    preOrder(root);
-    
+    inorder(root);
     
   }
   
-  static void preOrder(Node n){
+  
+  static void inorder(Node n){
     
-    if (n == null){
+    if(n == null){
       return;
     }
     
     else{
+      inorder(n.left);
       System.out.println(n.val);
-      preOrder(n.left);
-      preOrder(n.right);
+      inorder(n.right);
     }
     
   }
@@ -38,12 +35,12 @@ public class PreOrderTraversal{
 
 class Node{
   
-  int val;
+  int val ;
   Node left;
   Node right;
   
-  Node(int x){
-    val = x;
+  Node(int x ){
+      val = x;
   }
   
 }

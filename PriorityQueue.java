@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class QueueProg{
+public class PriorityQueueProg{
 
 
 	public static void main(String[] args) {

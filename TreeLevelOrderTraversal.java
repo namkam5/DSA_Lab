@@ -1,12 +1,9 @@
-/* This is a level order traversal without a queue
-   Note that this is  not the most efficient way to do this. 
-   Look at Queue implementation for a more efficient way using linked lists.
-*/
+// Also known as breadth first search, this is the recursive way to do it.
 
 import java.util.*;
 import java.io.*;
 
-public class LevelOrderTraversal{
+public class TreeLevelOrderTraversal{
   
   public static void main(String args[]){
     

@@ -1,10 +1,16 @@
+/*
+    Pre Order traversal implementation for a binary tree
+    Note that Depth First search and preorder traversal are same on a binary tree
+    This can also be a recursive solution to depth first search
+
+*/
+
 import java.util.*;
 import java.io.*;
 
-public class InorderTraversal{
+public class TreePreOrderTraversal{
   
   public static void main(String args[]){
-    
     
     Node root = new Node(1);
     root.left = new Node(2);
@@ -12,21 +18,21 @@ public class InorderTraversal{
     root.right.left = new Node(4);
     root.right.right = new Node(5);
     
-    inorder(root);
+    preOrder(root);
+    
     
   }
   
-  
-  static void inorder(Node n){
+  static void preOrder(Node n){
     
-    if(n == null){
+    if (n == null){
       return;
     }
     
     else{
-      inorder(n.left);
       System.out.println(n.val);
-      inorder(n.right);
+      preOrder(n.left);
+      preOrder(n.right);
     }
     
   }
@@ -35,12 +41,12 @@ public class InorderTraversal{
 
 class Node{
   
-  int val ;
+  int val;
   Node left;
   Node right;
   
-  Node(int x ){
-      val = x;
+  Node(int x){
+    val = x;
   }
   
 }

@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class PostOrderTraversal{
+public class TreePostOrderTraversal{
 
     public static void main(String args[]){
 
