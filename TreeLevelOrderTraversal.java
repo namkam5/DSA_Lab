@@ -1,4 +1,5 @@
-// Also known as breadth first search, this is the recursive way to do it.
+// Also known as breadth first search, this is the RECURSIVE way to do it. for a more efficient way please check
+// TreeBreadthFirstSearch.java in the same directory
 
 import java.util.*;
 import java.io.*;
