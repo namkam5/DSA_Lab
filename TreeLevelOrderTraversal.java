@@ -25,6 +25,8 @@ public class TreeLevelOrderTraversal{
     int h = height(root);
     for(int i = 1 ; i <= h ; i++){
       printGivenLevel(root,i);
+      System.out.println("Switch Level");
+      
     }
     
   }
